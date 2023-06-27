@@ -7,6 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
 import Navbar from "./Navbar";
+import Pay from "./Payment";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/service" component={Service} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/payment" component={Pay} />
         <Redirect to="/" />
       </Switch>
     </>
