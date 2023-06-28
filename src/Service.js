@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import img2 from "../src/Pictures/img2.png";
+import Footer from "./Footer";
 
 
 const serviceData = [
@@ -43,6 +44,8 @@ function Service() {
             </div>
           </div>
         </div>
+        <Footer />
+
       </div>
     </>
   );

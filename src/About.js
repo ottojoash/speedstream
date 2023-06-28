@@ -1,6 +1,7 @@
 import React from "react";
 import Common from "./Common";
 import web from "../src/Pictures/img3.png";
+import Footer from "./Footer";
 
 function About() {
   return (
@@ -11,6 +12,8 @@ function About() {
         visit="/contact"
         btname="Contact Us"
       />
+      <Footer />
+
     </>
   );
 }

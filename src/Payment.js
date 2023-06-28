@@ -1,5 +1,3 @@
-import "./Payment.css";
-
 import { useState } from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
@@ -30,8 +28,8 @@ export default function Pay() {
   const handleFlutterPayment = useFlutterwave(config);
 
   return (
-    <div className="Pay">
-      <div className="container">
+    <div className="Payment">
+      <div className="payment-container">
         <input
           type="number"
           placeholder="Amount"
