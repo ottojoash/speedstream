@@ -12,15 +12,15 @@ function Common({ name, imgsrc, visit, btname }) {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {name}
-                    <strong className="brand-name"> SpeedStream Inc. </strong>
+                    <strong className="brand-name" style={{ color: 'brown' }}>SpeedStream Inc.</strong>
                   </h1>
 
                   <h2 className="my-3">
                     Lets start Customising your experience!
                   </h2>
 
-                  <div className="mt-3">
-                    <NavLink to={visit} className="btn-get-started">
+                  <div className="mt-3" style={{ color: 'brown' }} >
+                    <NavLink to={visit} className="btn-get-started"  style={{ color: 'brown' }}>
                       {btname}
                     </NavLink>
                   </div>

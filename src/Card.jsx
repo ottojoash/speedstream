@@ -10,8 +10,8 @@ function Card({ title, imgsrc, description }) {
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
-            <NavLink to="/contact" className="btn btn-primary">
-              Get Quote
+            <NavLink to="/payment" className="btn btn-primary">
+              Purchase
             </NavLink>
           </div>
         </div>

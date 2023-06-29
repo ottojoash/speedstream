@@ -15,11 +15,7 @@ const serviceData = [
     imgsrc: img2,
     description: "This is a weekly bundle that lasts for 7days with unlimited browsing and entertainment",
   },
-  {
-    title: "Unlimited For 20000UGX",
-    imgsrc: img2,
-    description: "This is a monthly bundle that lasts for 30days with unlimited browsing",
-  },
+
 ];
 
 function Service() {

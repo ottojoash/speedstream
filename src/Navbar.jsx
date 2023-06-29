@@ -59,13 +59,7 @@ function Navbar() {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink
-                      activeClassName="menu_active"
-                      className="nav-link"
-                      to="/payment"
-                    >
-                      Pay
-                    </NavLink>
+                    
                   </li>
                 </ul>
               </div>

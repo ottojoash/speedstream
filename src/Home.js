@@ -1,12 +1,12 @@
 import React from "react";
 import Common from "./Common";
-import web from "../src/Pictures/img2.png";
+import web from "../src/Pictures/logo.png";
 import Footer from "./Footer";
 
 function Home() {
   return (
     <>
-      <Common
+      <Common style={{ color: 'brown' }}
         name="Grow your business with"
         imgsrc={web}
         visit="/service"

@@ -8,10 +8,10 @@ export default function Pay() {
   const [phone, setPhone] = useState("");
 
   const config = {
-    public_key: "FLWPUBK_TEST-e7c8f332b9d34b01b958cf4f4f643018-X",
+    public_key: "FLWPUBK-77518df9f12e1259c2f3e35e8111670b-X",
     tx_ref: Date.now(),
     amount: amount,
-    currency: "NGN",
+    currency: "UGX",
     payment_options: "card,mobilemoney,ussd",
     customer: {
       email: email,
