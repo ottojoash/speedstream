@@ -16,11 +16,11 @@ function Common({ name, imgsrc, visit, btname }) {
                   </h1>
 
                   <h2 className="my-3">
-                    Lets start Customising your experience!
+                    Let's start customizing your experience!
                   </h2>
 
-                  <div className="mt-3" style={{ color: 'brown' }} >
-                    <NavLink to={visit} className="btn-get-started"  style={{ color: 'brown' }}>
+                  <div className="mt-3" style={{ color: 'brown' }}>
+                    <NavLink to={visit} className="btn-get-started" style={{ color: 'brown' }}>
                       {btname}
                     </NavLink>
                   </div>
@@ -31,6 +31,7 @@ function Common({ name, imgsrc, visit, btname }) {
                     src={imgsrc}
                     className="img-fluid animated"
                     alt="HomeImg"
+                    style={styles.img}
                   />
                 </div>
               </div>
@@ -41,5 +42,14 @@ function Common({ name, imgsrc, visit, btname }) {
     </>
   );
 }
+
+const styles = {
+  img: {
+    '@media (max-width: 767px)': {
+      
+      width: '80%',
+    },
+  },
+};
 
 export default Common;

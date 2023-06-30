@@ -6,7 +6,7 @@ import Footer from "./Footer";
 function Home() {
   return (
     <>
-      <Common style={{ color: 'brown' }}
+      <Common
         name="Grow your business with"
         imgsrc={web}
         visit="/service"
@@ -16,5 +16,13 @@ function Home() {
     </>
   );
 }
+
+const styles = {
+  img: {
+    '@media (max-width: 767px)': {
+      width: '50%',
+    },
+  },
+};
 
 export default Home;

@@ -12,10 +12,10 @@ function Footer() {
               <a href="#" style={styles.iconLink}>
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" style={styles.iconLink}>
+              <a href="https://twitter.com/speedstream275" style={styles.iconLink}>
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" style={styles.iconLink}>
+              <a href="https://instagram.com/_speedstream275?igshid=MzRIODBiNWFIZA==" style={styles.iconLink}>
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
@@ -61,6 +61,11 @@ const styles = {
     marginRight: '10px',
     color: '#333',
     fontSize: '24px',
+  },
+  container: {
+  marginRight: "auto",
+  marginLeft: "auto",
+  marginTop: "30%",
   },
   paragraph: {
     marginBottom: '5px',
