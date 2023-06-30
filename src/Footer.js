@@ -32,8 +32,9 @@ function Footer() {
           {/* Contact */}
           <div style={styles.section}>
             <h3 style={styles.heading}>Contact Us</h3>
-            <p style={styles.paragraph}>Email: info@example.com</p>
+            <p style={styles.paragraph}>Email: speedstream275@gmail.com</p>
             <p style={styles.paragraph}>Phone: +256-764-994674</p>
+            <p style={styles.paragraph}>Phone: +256-753979253</p>
           </div>
         </div>
       </div>

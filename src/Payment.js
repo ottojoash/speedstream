@@ -8,7 +8,7 @@ export default function Pay() {
   const [phone, setPhone] = useState("");
 
   const config = {
-    public_key: "FLWPUBK-77518df9f12e1259c2f3e35e8111670b-X",
+    public_key: "FLWPUBK_TEST-54552883a8ee8066d4b7c498bc3dd687-X",
     tx_ref: Date.now(),
     amount: amount,
     currency: "UGX",
@@ -26,6 +26,31 @@ export default function Pay() {
   };
 
   const handleFlutterPayment = useFlutterwave(config);
+
+  const sendPaymentDetails = (paymentResponse) => {
+    const paymentData = {
+      paymentResponse: paymentResponse,
+      amount: amount,
+      email: email,
+      name: name,
+      phone: phone,
+    };
+
+    fetch("https://messaging-fjza.onrender.com/api/whatsapp", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(paymentData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Payment details sent successfully:", data);
+      })
+      .catch((error) => {
+        console.error("Failed to send payment details:", error);
+      });
+  };
 
   return (
     <div className="Payment">
@@ -56,6 +81,7 @@ export default function Pay() {
             handleFlutterPayment({
               callback: (response) => {
                 console.log(response);
+                sendPaymentDetails(response); // Send payment details after successful payment
                 closePaymentModal();
               },
               onClose: () => {},
